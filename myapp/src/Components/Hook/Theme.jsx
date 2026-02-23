@@ -6,22 +6,13 @@ export default function Theme() {
 
     const toggleTheme = () => {
         setDarkMode(!darkMode)
-    }
 
-    const themeStyle = {
-        backgroundColor: darkMode ? "black" : "white",
-        color: darkMode ? "white" : "black",
-        height: "100vh",
-        textAlign: "center",
-        paddingTop: "100px"
     }
 
     return (
-        <div style={themeStyle}>
-            <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
+        <div style={{ backgroundColor: darkMode ? "black" : "white", height: "100vh", display: "flex", alignItems: "center", justifyContent: 'center' }}>
 
-            <button onClick={toggleTheme}>
-                Switch to {darkMode ? "Light Mode" : "Dark Mode"}
+            <button onClick={toggleTheme} style={{ padding: "10px", backgroundColor: darkMode ? "white" : "black", color: darkMode ? 'black' : 'white' }}>{darkMode ? "Light Mode" : "Dark Mode"}
             </button>
         </div>
     )
