@@ -13,6 +13,8 @@ import Importmodule from './Components/ES7/Importmodule';
 import Ternaryoperator from './Components/ES7/Ternaryoperator';
 import Props from './Components/ES7/Props';
 import HookUseState from './Components/Hook/HookUseState'
+import Counter from './Components/Hook/Counter';
+import Theme from './Components/Hook/Theme';
 export default function App() {
   return (
     <div>
@@ -31,6 +33,8 @@ export default function App() {
           <Route path='/Importmodule' element={<Importmodule/>} />
           <Route path='/Ternaryoperator' element={<Ternaryoperator/>} />
           <Route path='/HookUseState' element={<HookUseState/>} />
+          <Route path='/Counter' element={<Counter/>} />
+          <Route path='/Theme' element={<Theme/>} />
           <Route path='/Props' element={<Props name="Rakshitha" />} />
           {/* <Route path='/Muiappbar' element={<Muiappbar/>} /> */}
 
