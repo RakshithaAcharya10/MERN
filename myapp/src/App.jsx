@@ -15,6 +15,9 @@ import Props from './Components/ES7/Props';
 import HookUseState from './Components/Hook/HookUseState'
 import Counter from './Components/Hook/Counter';
 import Theme from './Components/Hook/Theme';
+import HookUseEffect from './Components/Hook/HookUseEffect';
+import ApiAxios from './Components/Hook/ApiAxios';
+import AxiosTask from './Components/Hook/AxiosTask';
 export default function App() {
   return (
     <div>
@@ -35,6 +38,9 @@ export default function App() {
           <Route path='/HookUseState' element={<HookUseState/>} />
           <Route path='/Counter' element={<Counter/>} />
           <Route path='/Theme' element={<Theme/>} />
+          <Route path='/HookUseEffect' element={<HookUseEffect/>} />
+          <Route path='/ApiAxios' element={<ApiAxios/>} />
+          <Route path='/AxiosTask' element={<AxiosTask/>} />
           <Route path='/Props' element={<Props name="Rakshitha" />} />
           {/* <Route path='/Muiappbar' element={<Muiappbar/>} /> */}
 
